@@ -20,20 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-/* VIAL UID for Lily58*/
-#define VIAL_KEYBOARD_UID {0x7E, 0xFD, 0xFC, 0x5B, 0x7D, 0x39, 0x48, 0x06}
-
-/* VIAL secure unlock keystroke - currently both big keys (typ. SPACE/ENTER) */
-#define VIAL_UNLOCK_COMBO_ROWS {4, 9}
-#define VIAL_UNLOCK_COMBO_COLS {4, 4}
-
-/* Space reduction */
-
-#define DYNAMIC_KEYMAP_LAYER_COUNT 6
-#define VIAL_TAP_DANCE_ENTRIES 4
-#undef LOCKING_SUPPORT_ENABLE
-#undef LOCKING_RESYNC_ENABLE
-#define NO_ACTION_ONESHOT
+//#define USE_MATRIX_I2C
 
 /* Select hand configuration */
 
@@ -46,4 +33,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 100
 
+#define ENCODERS_PAD_A { D4 }
+#define ENCODERS_PAD_B { F5 }
+#define ENCODERS_PAD_A_RIGHT { F5 }
+#define ENCODERS_PAD_B_RIGHT { D4 }
+#define ENCODER_RESOLUTION { 4, 4 }
 
+#pragma once
+#define VIAL_KEYBOARD_UID {0xA2, 0xAC, 0xC4, 0x3B, 0x9C, 0x08, 0xAF, 0x14}
+
+// Underglow
+/*
+#undef RGBLED_NUM
+#define RGBLED_NUM 14    // Number of LEDs
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_SLEEP
+*/
